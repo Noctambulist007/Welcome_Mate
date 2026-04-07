@@ -21,7 +21,7 @@ Welcome Mate is a comprehensive application designed to help users integrate int
 ## Setup and Running
 
 ### Backend (Django)
-1. Navigate to `backend_django/welcome_mate`
+1. Navigate to `backend_django`
 2. Create a virtual environment: `python -m venv venv`
 3. Activate the virtual environment
 4. Install dependencies: `pip install -r requirements.txt`
@@ -29,7 +29,7 @@ Welcome Mate is a comprehensive application designed to help users integrate int
 6. Run the server: `python manage.py runserver`
 
 ### Frontend (Flutter)
-1. Navigate to `frontend_flutter/welcomemate`
+1. Navigate to `frontend_flutter`
 2. Fetch dependencies: `flutter pub get`
 3. Run the app: `flutter run`
 
@@ -38,25 +38,23 @@ Welcome Mate is a comprehensive application designed to help users integrate int
 ```
 welcomemate/
 ├── backend_django/
-│   └── welcome_mate/
-│       ├── welcomemate_backend/ # Core Django settings & configurations
-│       ├── users/               # Authentication and Profile apps 
-│       ├── community/           # Community and Forum apps
-│       ├── chat/                # Real-time messaging 
-│       ├── guides/              # Guides and resources
-│       ├── emergency/           # Emergency info
-│       ├── places/              # Location and interest points
-│       ├── checklists/          # Task management
-│       ├── notifications/       # Push and in-app alerts
-│       └── requirements.txt     # Python dependencies
+│   ├── welcomemate_backend/ # Core Django settings & configurations
+│   ├── users/               # Authentication and Profile apps 
+│   ├── community/           # Community and Forum apps
+│   ├── chat/                # Real-time messaging 
+│   ├── guides/              # Guides and resources
+│   ├── emergency/           # Emergency info
+│   ├── places/              # Location and interest points
+│   ├── checklists/          # Task management
+│   ├── notifications/       # Push and in-app alerts
+│   └── requirements.txt     # Python dependencies
 └── frontend_flutter/
-    └── welcomemate/
-        ├── lib/
-        │   ├── data/            # API clients, repositories, and local storage models
-        │   ├── di/              # Dependency Injection logic (get_it)
-        │   ├── domain/          # Entities and Use-cases (Clean Architecture)
-        │   └── presentation/    # UI logic (Riverpod state, Screens, Widgets, Theme)
-        └── pubspec.yaml         # Flutter dependencies
+    ├── lib/
+    │   ├── data/            # API clients, repositories, and local storage models
+    │   ├── di/              # Dependency Injection logic (get_it)
+    │   ├── domain/          # Entities and Use-cases (Clean Architecture)
+    │   └── presentation/    # UI logic (Riverpod state, Screens, Widgets, Theme)
+    └── pubspec.yaml         # Flutter dependencies
 ```
 
 ## Architecture & Plumbing
